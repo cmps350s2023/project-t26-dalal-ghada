@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/schedule-editor.css">
+    <title>Conference Management System</title>
+</head>
+
+<body>
+	<header>
+		<a href="/index.html"><img id="logo" src="../img/logo.jpg" alt="ConfPlus App Image"></a>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="#" onclick="submitPaperPage()">Submit Paper</a></li>
+				<li><a href="#" onclick="reviewPaperPage()">Review Papers</a></li>
+				<li><a href="#" onclick="scheduleEditorPage()">Schedule Editor</a></li>
+			</ul>
+		</nav>
+		<p id="pelcome" hidden>Welcome <span id="fname">User</span><span id="logout" onclick="logout()">, Logout?</span></p>
+		<button id="login">Login</button>
+	</header>
+	<main>
+		<h1>ConfPlus - <span id="page-title"></span> Conference Schedule</h1>
+		<form id="schedule-form">
+			<section id="sessions">
+				<h2>Sessions</h2>
+				<div id="sessions-container">
+					<div class="session">
+						<label for="title_0">Title:</label>
+						<input type="text" id="title_0" name="sessions[0][title]" required>
+						
+						<label for="location_0">Location:</label>
+						<select id="location_0" name="sessions[0][location]" required>
+							<option value="">--Select Location--</option>
+						</select>
+						
+						<label for="date_0">Date:</label>
+						<select id="date_0" name="sessions[0][date]" required>
+							<option value="">--Select Date--</option>
+						</select>
+						
+						<section id="paper-presentations">
+							<h2>Paper Presentations</h2>
+							<table>
+								<thead>
+									<tr>
+										<th>Paper Title</th>
+										<th>Presenter Name</th>
+										<th>From Time</th>
+										<th>To Time</th>
+									</tr>
+								</thead>
+								<tbody id="presentations_0">
+									<tr>
+										<td>
+											<select id="paper_0_0" name="paper_0_0" onchange="fill('presenter_0_0', 'paper_0_0')" required>
+												<option value="">-- Select Paper --</option>
+											</select>
+										</td>
+										<td><input type="text" id="presenter_0_0" name="presenter_0_0" value="" readonly></td>
+										<td><input type="time" id="from_time_0_0" name="from_time_0_0" required></td>
+										<td><input type="time" id="to_time_0_0" name="to_time_0_0" required></td>
+									</tr>
+								</tbody>
+							</table>
+							<button type="button" class="action-btn add" onclick="addPresentation(0)">Add Presentation</button>
+							<button type="button" class="action-btn remove" onclick="removePresentation(0)">Remove Presentation</button>
+						</section>
+					</div>
+				</div>			
+				<button type="button" class="action-btn add" id="add-session-btn">Add Session</button>
+				<button type="button" class="action-btn remove" id="remove-session-btn" disabled>Remove Session</button>
+			</section>
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+	
+    <script src="../js/header.js"></script>
+	<script src="../js/schedule-editor.js"></script>
+</body>
+
+</html>

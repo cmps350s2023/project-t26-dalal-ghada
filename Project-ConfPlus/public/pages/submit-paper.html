@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/submit-paper.css">
+    <title>Conference Management System</title>
+</head>
+
+<body>
+	<header>
+		<a href="/index.html"><img id="logo" src="../img/logo.jpg" alt="ConfPlus App Image"></a>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="#" onclick="submitPaperPage()">Submit Paper</a></li>
+				<li><a href="#" onclick="reviewPaperPage()">Review Papers</a></li>
+				<li><a href="#" onclick="scheduleEditorPage()">Schedule Editor</a></li>
+			</ul>
+		</nav>
+		<p id="pelcome" hidden>Welcome <span id="fname">User</span><span id="logout" onclick="logout()">, Logout?</span></p>
+		<button id="login">Login</button>
+	</header>
+	<main>
+		<div class="container">
+		  <h1>ConfPlus - Submit Paper</h1>
+		  <form id="paper-form" enctype="multipart/form-data">
+			<label for="paper_title">Paper Title:</label>
+			<input type="text" id="paper_title" name="paper_title" required>
+			<label for="abstract">Abstract:</label>
+			<textarea id="abstract" name="abstract" required></textarea>
+			
+			<h3>Authors:</h3>
+			<div id="authors-container">
+				<div class="author">
+					<label for="first_name_0">First Name:</label>
+					<input type="text" id="first_name_0" name="authors[0][first_name]" required>
+					<label for="last_name_0">Last Name:</label>
+					<input type="text" id="last_name_0" name="authors[0][last_name]" required>
+					<label for="email_0">Email:</label>
+					<input type="email" id="email_0" name="authors[0][email]" required>
+					<label for="affiliation_0">Affiliation:</label>
+					<select id="affiliation_0" name="authors[0][affiliation]" required>
+						<option value="">--Select Affiliation--</option>
+					</select>
+					<label for="presenter_0">Presenter:</label>
+					<input type="checkbox" id="presenter_0" name="authors[0][presenter]" value="true" onclick="validate('presenter_0')">
+				</div>
+			</div>
+			<button type="button" id="add-author-btn">Add Author</button>
+			<button type="button" id="remove-author-btn" disabled>Remove Author</button>
+			
+			<label for="file" id="fl">File:</label>
+			<input type="file" id="file" required>
+			<button type="submit">Submit</button>
+		  </form>
+		</div>
+	</main>
+	
+    <script src="../js/header.js"></script>
+	<script src="../js/submit-paper.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/login.css">
+    <title>Conference Management System</title>
+</head>
+
+<body>
+	<header>
+		<a href="/index.html"><img id="logo" src="../img/logo.jpg" alt="ConfPlus App Image"></a>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="#" onclick="submitPaperPage()">Submit Paper</a></li>
+				<li><a href="#" onclick="reviewPaperPage()">Review Papers</a></li>
+				<li><a href="#" onclick="scheduleEditorPage()">Schedule Editor</a></li>
+			</ul>
+		</nav>
+		<p id="pelcome" hidden>Welcome <span id="fname">User</span><span id="logout" onclick="logout()">, Logout?</span></p>
+		<button id="login">Login</button>
+	</header>
+	<main>
+		<div class="container">
+		  <h1>ConfPlus - Login Form</h1>
+		  <form class="login-form">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required />
+			
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required />
+			
+			<p id="error"></p>
+			<button type="submit">Login</button>
+		  </form>
+		</div>
+	</main>
+	
+    <script src="../js/header.js"></script>
+	<script src="../js/login.js"></script>
+</body>
+
+</html>
