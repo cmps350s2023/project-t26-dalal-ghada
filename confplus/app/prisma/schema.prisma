@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,4 +5,85 @@ generator client {
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+
+
+model Date {
+  id   Int   @id @default(autoincrement())
+  name String
+  
+
+}
+
+model Institution {
+  id   Int    @id @default(autoincrement())
+  name String  @unique
+}
+
+model Location {
+    id Int    @id @default(autoincrement())
+    name String  @unique
+}
+
+model User {
+  id         Int    @id @default(autoincrement())
+  first_name String
+  last_name  String
+  email      String @unique
+  password   String
+  role       String
+
+  papers ReviewersOnPapers[]
+}
+
+model Paper {
+  id                 Int    @id @default(autoincrement())
+  paper_title        String
+  abstract           String
+  file               String
+  overall_evaluation Int
+
+  authors   Author[]
+  reviewers ReviewersOnPapers[]
+}
+
+model ReviewersOnPapers {
+  paper      Paper @relation(fields: [paperId], references: [id])
+  paperId    Int
+  reviewer   User  @relation(fields: [reviewerId], references: [id])
+  reviewerId Int
+
+  @@id([paperId, reviewerId])
+}
+
+model Author {
+  id          Int 	 @id @default(autoincrement())
+  first_name  String
+  last_name   String
+  email       String
+  affiliation String
+  presenter   Boolean @default(false)  
+  Paper       Paper   @relation(fields: [paperId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  paperId     Int
+}
+
+model Schedule {
+  id            Int           @id @default(autoincrement())
+  title         String        @unique
+  date          String        
+  location      String
+  presentations Presentation[]
+  
+
+}
+
+model Presentation {
+  id          	 Int 	 @id @default(autoincrement())
+  paper_title    String
+  presenter_name String   
+  from_time      String
+  to_time        String
+  Schedule      	 Schedule @relation(fields: [sessionId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  sessionId    	 Int
 }
