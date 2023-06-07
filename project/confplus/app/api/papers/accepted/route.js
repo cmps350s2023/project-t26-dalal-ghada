@@ -1,5 +1,6 @@
-import { getAcceptedPapers } from "../papers-repo"
+import { papersRepo } from "../../repos/papers-repo";
 
 export async function GET(request) {
-  return Response.json(await getAcceptedPapers())
+  //get all accepted papers
+  return Response.json(await papersRepo.getAcceptedPapers());
 }
