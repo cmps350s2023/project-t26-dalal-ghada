@@ -128,8 +128,8 @@
     "reviews": [
       {
         "userID": 9,
-        "overallRating": "-1",
-        "contribution": "5",
+        "overallRating": -1,
+        "contribution": 5,
         "weakness": "Yupp",
         "strength": "BBBBB"
       }
@@ -178,28 +178,11 @@
       },
       {
         "userID": 9,
-        "overallRating": "2",
-        "contribution": "5",
+        "overallRating": 2,
+        "contribution": 5,
         "weakness": "Some sections poorly written",
         "strength": "Fantastic"
       }
     ]
-  },
-  {
-    "id": 5,
-    "title": "PAPER TEST",
-    "abstract": "mkcldc",
-    "authors": [
-      {
-        "firstName": " ddlwk",
-        "lastName": " mlmkf",
-        "email": "wow@wow.com",
-        "affiliation": "wmekv"
-      }
-    ],
-    "paperURL": "/papers/paper5.pdf",
-    "reviewers": [9, 13],
-    "isPresented": false,
-    "reviews": []
   }
 ]
