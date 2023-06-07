@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/home.css">
+    <title>Conference Management System</title>
+</head>
+
+<body>
+	<header>
+		<a href="/index.html"><img id="logo" src="img/logo.jpg" alt="ConfPlus App Image"></a>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="#" onclick="submitPaperPage()">Submit Paper</a></li>
+				<li><a href="#" onclick="reviewPaperPage()">Review Papers</a></li>
+				<li><a href="#" onclick="scheduleEditorPage()">Schedule Editor</a></li>
+			</ul>
+		</nav>
+		<p id="pelcome" hidden>Welcome <span id="fname">Ali</span><span id="logout" onclick="logout()">, Logout?</span></p>
+		<button id="login">Login</button>
+	</header>
+	
+	<main>
+		<div id="schedule">
+			<select id="date">
+				<option value="">--Select Date--</option>
+			</select>
+			<div class="grid-container"></div>
+		</div>
+	</main>
+	
+	<script src="js/header.js"></script>
+	<script src="js/home.js"></script>
+</body>
+
+</html>

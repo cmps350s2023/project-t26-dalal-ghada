@@ -1,0 +1,40 @@
+/* apply some public styles to the home page */
+main {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.session {
+  width: 350px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.session h2 {
+  text-align: center;
+  margin-top:10px;
+}
+
+.session h3 {
+  padding-top: 25px;
+}
+
+.presentation {
+  margin-left: 20px;
+}
+
+.presentation h3 {
+  margin-top: 0;
+}

@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #008CBA;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+#logo {
+	width: 100px;
+	padding: 5px 0;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#logo:hover {
+	transform: scale(1.2);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#login {
+  padding: 0.8rem;
+  border: none;
+  color: green;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+#login:hover {
+  background-color: white;
+}
+
+#pelcome {
+	color: white;
+}
+
+#logout:hover {
+	color: red;
+	cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0.5rem;
+  }
+}

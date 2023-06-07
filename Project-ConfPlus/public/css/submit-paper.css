@@ -1,0 +1,95 @@
+/* apply some basic styles to the part page */
+main {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* center the form */
+form {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea, select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+}
+
+#add-author-btn,
+#remove-author-btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#add-author-btn:hover {
+	background-color: green;
+}
+
+#remove-author-btn:hover {
+	background-color: #EE4B2B;
+}
+
+/* style the file input */
+input[type="file"] {
+  margin-top: 5px;
+}
+
+#fl {
+	margin-top: 20px;
+}
+
+#authors-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.author {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}

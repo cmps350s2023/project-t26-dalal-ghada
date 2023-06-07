@@ -1,0 +1,140 @@
+main {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+/* center the form */
+form {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  background-color: #dcdcdc;
+  color: #333;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0c0c0;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #333;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.action-btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.add:hover {
+	background-color: green;
+}
+
+.remove:hover {
+	background-color: #EE4B2B;
+}
+
+button[type="submit"] {
+  padding: 0.5rem;
+  border: none;
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+button[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f5f5f5;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+input[type="time"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  width: 6rem;
+}
+
+#sessions-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.session {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
