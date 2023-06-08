@@ -1,163 +1,162 @@
 [
   {
     "id": 1,
-    "first_name": "John",
-    "last_name": "Doe",
+    "firstName": "John",
+    "lastName": "Doe",
     "email": "johndoe@organizer.com",
     "password": "password123",
     "role": "organizer"
   },
   {
     "id": 2,
-    "first_name": "Jane",
-    "last_name": "Doe",
+    "firstName": "Jane",
+    "lastName": "Doe",
     "email": "janedoe@organizer.com",
     "password": "password123",
     "role": "organizer"
   },
   {
     "id": 3,
-    "first_name": "Bob",
-    "last_name": "Smith",
+    "firstName": "Bob",
+    "lastName": "Smith",
     "email": "bobsmith@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 4,
-    "first_name": "Alice",
-    "last_name": "Johnson",
+    "firstName": "Alice",
+    "lastName": "Johnson",
     "email": "alicejohnson@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 5,
-    "first_name": "David",
-    "last_name": "Brown",
+    "firstName": "David",
+    "lastName": "Brown",
     "email": "davidbrown@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 6,
-    "first_name": "Emily",
-    "last_name": "Davis",
+    "firstName": "Emily",
+    "lastName": "Davis",
     "email": "emilydavis@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 7,
-    "first_name": "Oliver",
-    "last_name": "Martin",
+    "firstName": "Oliver",
+    "lastName": "Martin",
     "email": "olivermartin@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 8,
-    "first_name": "Sophie",
-    "last_name": "Miller",
+    "firstName": "Sophie",
+    "lastName": "Miller",
     "email": "sophiemiller@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 9,
-    "first_name": "Luke",
-    "last_name": "Harris",
+    "firstName": "Luke",
+    "lastName": "Harris",
     "email": "lukeharris@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 10,
-    "first_name": "Mia",
-    "last_name": "Wilson",
+    "firstName": "Mia",
+    "lastName": "Wilson",
     "email": "miawilson@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 11,
-    "first_name": "Noah",
-    "last_name": "Thomas",
+    "firstName": "Noah",
+    "lastName": "Thomas",
     "email": "noahthomas@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 12,
-    "first_name": "Ava",
-    "last_name": "Lee",
+    "firstName": "Ava",
+    "lastName": "Lee",
     "email": "avalee@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
   {
     "id": 13,
-    "first_name": "Jacob",
-    "last_name": "Clark",
+    "firstName": "Jacob",
+    "lastName": "Clark",
     "email": "jacobclark@reviewer.com",
     "password": "password123",
     "role": "reviewer"
   },
-{
+  {
     "id": 14,
-    "first_name": "Emma",
-    "last_name": "Walker",
+    "firstName": "Emma",
+    "lastName": "Walker",
     "email": "emmawalker@author.com",
     "password": "password123",
     "role": "author"
-},
-{
+  },
+  {
     "id": 15,
-    "first_name": "Ethan",
-    "last_name": "Turner",
+    "firstName": "Ethan",
+    "lastName": "Turner",
     "email": "ethanturner@author.com",
     "password": "password123",
     "role": "author"
-},
-{
+  },
+  {
     "id": 16,
-    "first_name": "Chloe",
-    "last_name": "Parker",
+    "firstName": "Chloe",
+    "lastName": "Parker",
     "email": "chloeparker@author.com",
     "password": "password123",
     "role": "author"
-},
-{
+  },
+  {
     "id": 17,
-    "first_name": "William",
-    "last_name": "Hall",
+    "firstName": "William",
+    "lastName": "Hall",
     "email": "williamhall@author.com",
     "password": "password123",
     "role": "author"
-},
-{
+  },
+  {
     "id": 18,
-    "first_name": "Grace",
-    "last_name": "Garcia",
+    "firstName": "Grace",
+    "lastName": "Garcia",
     "email": "gracegarcia@author.com",
     "password": "password123",
     "role": "author"
-},
-{
+  },
+  {
     "id": 19,
-    "first_name": "Daniel",
-    "last_name": "Young",
+    "firstName": "Daniel",
+    "lastName": "Young",
     "email": "danielyoung@author.com",
     "password": "password123",
     "role": "author"
-},
-{
+  },
+  {
     "id": 20,
-    "first_name": "Zoe",
-    "last_name": "Allen",
+    "firstName": "Zoe",
+    "lastName": "Allen",
     "email": "zoeallen@author.com",
     "password": "password123",
     "role": "author"
-}
+  }
 ]
-
